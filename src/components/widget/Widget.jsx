@@ -20,7 +20,7 @@ const Widget = ({ type }) => {
                 data={
                     title: "USERS",
                     isMoney: false,
-                    link:"View all users",
+                    link:"See all users",
                     icon:  <PersonOutlineIcon 
                     className="icon" 
                     style={{
@@ -47,7 +47,11 @@ const Widget = ({ type }) => {
                     title: "EARNINGS",
                     isMoney: true,
                     link:"View net earnings",
-                    icon:  <MonetizationOnOutlined className="icon" />
+                    icon:  <MonetizationOnOutlined className="icon"
+                    style= {{
+                        backgroundColor: "rgba(0, 128, 0, 0.2",
+                        color: "green"
+                    }}/> 
                 };
                 break;
             case "balance":
@@ -55,7 +59,12 @@ const Widget = ({ type }) => {
                     title: "BALANCE",
                     isMoney: true,
                     link:"See details",
-                    icon:  <AccountBalanceWalletOutlined className="icon" />
+                    icon:  <AccountBalanceWalletOutlined 
+                    className="icon" 
+                    style= {{
+                        backgroundColor: "rgba(128, 0, 128, 0.2",
+                        color: "purple"
+                    }}/>
                 };
                 break;
             default:
